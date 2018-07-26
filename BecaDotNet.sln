@@ -11,49 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BecaDotNet.Repository", "Be
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BecaDotNet.ApplicationService", "BecaDotNet.ApplicationService\BecaDotNet.ApplicationService.csproj", "{1D0B77A5-92FF-4B17-85DF-29F51AAC1DAA}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BecaDotNet.UI.WebForms", "BecaDotNet.UI.WebForms\", "{7B5B7FDA-4CF5-42AD-BAE6-FB2D14316D7A}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_51712"
-		Debug.AspNetCompiler.PhysicalPath = "BecaDotNet.UI.WebForms\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51712\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_51712"
-		Release.AspNetCompiler.PhysicalPath = "BecaDotNet.UI.WebForms\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51712\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "51712"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BecaDotNet.UI.MVC.Razor", "BecaDotNet.UI.MVC.Razor\", "{2EB1F40F-5E03-4F91-A4F3-48F85A56D710}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_51829"
-		Debug.AspNetCompiler.PhysicalPath = "BecaDotNet.UI.MVC.Razor\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51829\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_51829"
-		Release.AspNetCompiler.PhysicalPath = "BecaDotNet.UI.MVC.Razor\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51829\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "51829"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BecaDotNet.UI.MVC.WebAPI", "BecaDotNet.UI.MVC.WebAPI\BecaDotNet.UI.MVC.WebAPI.csproj", "{45F2EE75-7BFE-4CB8-B324-68FAF1598E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BecaDotNet.UI.WebForms", "BecaDotNet.UI.WebForms\BecaDotNet.UI.WebForms.csproj", "{49D1208C-7356-4BA6-8E7C-2EAD69F3E44E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BecaDotNet.UI.MVC.Razor", "BecaDotNet.UI.MVC.Razor\BecaDotNet.UI.MVC.Razor.csproj", "{4D01183F-7A4A-458A-A111-97A5CCAFFF6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,18 +39,18 @@ Global
 		{1D0B77A5-92FF-4B17-85DF-29F51AAC1DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D0B77A5-92FF-4B17-85DF-29F51AAC1DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D0B77A5-92FF-4B17-85DF-29F51AAC1DAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B5B7FDA-4CF5-42AD-BAE6-FB2D14316D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B5B7FDA-4CF5-42AD-BAE6-FB2D14316D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B5B7FDA-4CF5-42AD-BAE6-FB2D14316D7A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B5B7FDA-4CF5-42AD-BAE6-FB2D14316D7A}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{2EB1F40F-5E03-4F91-A4F3-48F85A56D710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EB1F40F-5E03-4F91-A4F3-48F85A56D710}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EB1F40F-5E03-4F91-A4F3-48F85A56D710}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EB1F40F-5E03-4F91-A4F3-48F85A56D710}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{45F2EE75-7BFE-4CB8-B324-68FAF1598E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45F2EE75-7BFE-4CB8-B324-68FAF1598E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45F2EE75-7BFE-4CB8-B324-68FAF1598E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45F2EE75-7BFE-4CB8-B324-68FAF1598E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D1208C-7356-4BA6-8E7C-2EAD69F3E44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D1208C-7356-4BA6-8E7C-2EAD69F3E44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D1208C-7356-4BA6-8E7C-2EAD69F3E44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D1208C-7356-4BA6-8E7C-2EAD69F3E44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D01183F-7A4A-458A-A111-97A5CCAFFF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D01183F-7A4A-458A-A111-97A5CCAFFF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D01183F-7A4A-458A-A111-97A5CCAFFF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D01183F-7A4A-458A-A111-97A5CCAFFF6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

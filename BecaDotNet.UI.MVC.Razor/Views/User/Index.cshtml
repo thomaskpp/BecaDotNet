@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "UI MVC - Razor - User";
+}
+
+<hgroup class="title">
+    <h1>@Page.Title.</h1>
+</hgroup>
+
+<article>
+    <div>
+        <a href="#" id="lkCreateUser">Create User</a>
+    </div>
+    <div id="dvCreateUser">
+    </div>
+</article>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#lkCreateUser").on("click", function (e) {
+            e.preventDefault();
+            $("#dvCreateUser").load('@Url.Action("CreateUser", "User")')
+        });
+    });
+</script>
