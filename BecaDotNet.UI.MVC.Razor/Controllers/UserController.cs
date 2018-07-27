@@ -31,7 +31,7 @@ namespace BecaDotNet.UI.MVC.Razor.Controllers
                     return RedirectToAction("Index");
                 return null;
             }
-            catch (Exception ex)
+            catch
             {
                 return null;
             }

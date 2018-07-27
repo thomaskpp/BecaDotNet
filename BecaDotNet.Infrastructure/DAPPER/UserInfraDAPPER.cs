@@ -33,7 +33,7 @@ namespace BecaDotNet.Infrastructure.DAPPER
                     return result;
                 }
             }
-            catch(Exception ex)
+            catch
             {
                 return null;
             }
