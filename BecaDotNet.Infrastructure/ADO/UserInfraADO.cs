@@ -1,6 +1,5 @@
 ﻿using BecaDotNet.Domain.Model;
 using System;
-using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -9,38 +8,32 @@ namespace BecaDotNet.Infrastructure.ADO
 {
     public class UserInfraADO
     {
-        
-
         public User Get(string login, string password)
         {
             var factory = new SqlClientFactory();
-            var connection = factory.CreateConnection();
-            var command = factory.CreateCommand();
-            command.Connection= connection;
-            command.CommandType = CommandType.Text;
-            command.CommandText = "select * from tb_user where login =@login and password=@password";
-            command.Parameters.Add(new SqlParameter("@login",login));
-            command.Parameters.Add(new SqlParameter("@password", password));
-            try
+            using (var connection = factory.CreateConnection())
             {
-                connection.Open();
-                var reader = command.ExecuteReader();
-                while (reader.Read())
+                var command = factory.CreateCommand();
+                command.Connection = connection;
+                command.CommandType = CommandType.Text;
+                command.CommandText = "select * from tb_user where login =@login and password=@password";
+                command.Parameters.Add(new SqlParameter("@login", login));
+                command.Parameters.Add(new SqlParameter("@password", password));
+                try
                 {
-                    var objUser = GetFromReader(reader);
+                    connection.Open();
+                    var reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        var objUser = GetFromReader(reader);
                         return objUser;
+                    }
+                    return null;
                 }
-                return null;
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                if (connection != null && connection.State == ConnectionState.Open)
-                    connection.Close();
-                connection.Dispose();
+                catch 
+                {
+                    return null;
+                }
             }
         }
 
