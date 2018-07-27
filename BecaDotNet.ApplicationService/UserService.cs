@@ -16,8 +16,8 @@ namespace BecaDotNet.ApplicationService
         public bool Create(User user)
         {
             var userDapperInfra = new UserInfraDAPPER();
-            userDapperInfra.Create(user);
-            return user != null;
+            var result = userDapperInfra.Create(user);
+            return result != null;
         }
 
         public User Get(int id)
